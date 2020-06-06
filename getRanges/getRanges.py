@@ -40,5 +40,4 @@ def getRanges (array, target):
         
 print(getRanges([1,1,1,2], 1))
 
-
 # O(logN)
