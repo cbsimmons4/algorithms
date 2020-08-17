@@ -59,3 +59,7 @@ print ('treeThree: ', isBST(treeThree))
 #True: All good!
 treeFour = [5,1,7,None,None,6,8]
 print ('treeFour: ', isBST(treeFour))
+
+
+
+print(493827157>>2)
