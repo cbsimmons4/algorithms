@@ -103,22 +103,13 @@ def main():
     quadtree.visualize(title="Case 6: Query After Operations")
     print("\n")
 
-    # Case 7: Testing maximum tree depth with points and edges
-    print("Case 7: Testing maximum tree depth with points and edges...")
-    points = []
+    # Case 7: Testing maximum tree depth
+    print("Case 7: Testing maximum tree depth...")
     for i in range(100):  # Add 100 points to ensure the tree reaches max depth
         x, y = random.randint(0, 100), random.randint(0, 100)
         data = f"Point-{i}"
         quadtree.add(x, y, data)
-        points.append(Point(x, y, data))
-
-    # Add edges between random points
-    for _ in range(20):  # Add 20 random edges
-        if len(points) >= 2:
-            p1, p2 = random.sample(points, 2)
-            quadtree.addEdge(p1, p2)
-
-    quadtree.visualize(title="Case 7: Maximum Tree Depth with Points and Edges")
+    quadtree.visualize(title="Case 7: Maximum Tree Depth")
     print("\n")
 
 if __name__ == "__main__":
